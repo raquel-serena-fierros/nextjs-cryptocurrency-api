@@ -9,7 +9,7 @@ export default function Home({ filteredCrypto }) {
   const allCryptos = filteredCrypto.filter((props) =>
     props.name.toLowerCase().includes(search.toLowerCase())
   );
-  const handleChange = (event) => {
+  const userSearch = (event) => {
     event.preventDefault();
     setSearch(event.target.value.toLowerCase());
   };
@@ -20,7 +20,7 @@ export default function Home({ filteredCrypto }) {
       <Search
         type='text'
         placeholder='Search Cryptocurrency'
-        onInput={handleChange}
+        onInput={userSearch}
       />
       <CryptoList filteredCrypto={allCryptos} />
     </div>

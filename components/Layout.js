@@ -2,7 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import styles from "./Layout.module.css";
 
-const Layout = ({ props }) => {
+const Layout = ({ children }) => {
   return (
     <div className='layout'>
       <Head>
@@ -41,7 +41,7 @@ const Layout = ({ props }) => {
           </a>
         </Link>
       </header>
-      <main>{props}</main>
+      <main>{children}</main>
     </div>
   );
 };

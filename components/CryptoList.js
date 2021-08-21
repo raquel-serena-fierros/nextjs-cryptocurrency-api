@@ -3,18 +3,18 @@ import Crypto from "./CryptoInfo/Crypto";
 export default function CryptoList({ filteredCrypto }) {
   return (
     <>
-      {filteredCrypto.map((prop) => {
+      {filteredCrypto.map((props) => {
         return (
           <Crypto
-            key={prop.id}
-            title={prop.title}
-            id={prop.id}
-            price={prop.current_price}
-            symbol={prop.symbol}
-            marketcap={prop.market_cap}
-            volume={prop.total_volume}
-            image={prop.image}
-            priceUpdate={prop.price_change_percentage_24h}
+            key={props.id}
+            title={props.name}
+            id={props.id}
+            price={props.current_price}
+            ticker={props.symbol}
+            marketcap={props.market_cap}
+            volume={props.total_volume}
+            image={props.image}
+            priceUpdate={props.price_change_percentage_24h}
           />
         );
       })}

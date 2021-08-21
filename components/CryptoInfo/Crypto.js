@@ -4,7 +4,7 @@ import Link from "next/link";
 const Crypto = ({
   title,
   price,
-  symbol,
+  ticker,
   marketcap,
   volume,
   image,
@@ -12,14 +12,14 @@ const Crypto = ({
   id,
 }) => {
   return (
-    <Link href='/coin/[id]' as={`/coin/${id}`}>
+    <Link href='/cryptopage/[id]' as={`/cryptopage/${id}`}>
       <a>
         <div className={styles.crypto_container}>
           <div className={styles.crypto_row}>
             <div className={styles.crypto}>
               <img src={image} alt={title} className={styles.crypto_img} />
               <h1 className={styles.crypto_text}>{title}</h1>
-              <p className={styles.crypto_ticker}>{symbol}</p>
+              <p className={styles.crypto_ticker}>{ticker}</p>
             </div>
             <div className={styles.crypto_data}>
               <p className={styles.crypto_price}>${price}</p>

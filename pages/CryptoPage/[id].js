@@ -1,5 +1,5 @@
 import Layout from "../../components/Layout";
-import styles from "./CryptoPage.module.css";
+import styles from "./cryptopage.module.css";
 const Coin = ({ props }) => {
   return (
     <Layout>
@@ -13,7 +13,7 @@ const Coin = ({ props }) => {
           <h1 className={styles.crypto_title}>{props.name}</h1>
           <p className={styles.crypto_ticker}>{props.symbol}</p>
           <p className={styles.crypto_curr}>
-            {props.market_data.current_price.usd}
+            ${props.market_data.current_price.usd}
           </p>
         </div>
       </div>
@@ -33,7 +33,7 @@ export async function getServerSideProps(context) {
 
   return {
     props: {
-      coin: data,
+      props: data,
     },
   };
 }
