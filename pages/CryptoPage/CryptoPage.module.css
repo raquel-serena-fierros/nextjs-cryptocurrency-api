@@ -1,0 +1,54 @@
+.crypto_page {
+  display: flex;
+  justify-content: center;
+  height: 75vh;
+  align-items: center;
+}
+
+.crypto_container {
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  top: calc(42% - 24px);
+  left: calc(35% - 24px);
+  border: 1px solid #9a2fff;
+  border-radius: 10px;
+  padding: 6rem;
+  width: 500px;
+}
+
+.crypto_img {
+  position: abosolute;
+  left: 50%;
+  transform: translate(10%, -35%);
+  margin: 0 auto;
+}
+
+.crypto_title {
+  position: abosolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translate(35%, -150%);
+  margin: 0 auto;
+}
+
+.crypto_ticker {
+  position: abosolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translate(40%, -50%);
+  margin: 0 auto;
+  text-transform: uppercase;
+  color: #3cb8dd;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.crypto_curr {
+  position: abosolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translate(35%, 100%);
+  margin: 0 auto;
+  font-size: 2rem;
+}

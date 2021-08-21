@@ -1,0 +1,16 @@
+.container {
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  top: calc(5% - 24px);
+  left: calc(47.5% - 24px);
+}
+.title_container {
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  font-family: Roboto;
+  color: #fff;
+  top: calc(17% - 24px);
+  left: calc(38% - 24px);
+}
